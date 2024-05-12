@@ -3,7 +3,7 @@
 
 Train::Train() : countOp(0), first(nullptr) {}
 
-void Train::addCage(bool light){
+void Train::addCage(bool light) {
   Cage *newcage = new Cage();
   newcage->light = light;
 
@@ -19,7 +19,7 @@ void Train::addCage(bool light){
   }
 }
 
-int Train::getLength(){
+int Train::getLength() {
   if (first == nullptr)
     return 0;
   first->light = true;
@@ -39,6 +39,6 @@ int Train::getLength(){
   return count;
 }
 
-int Train::getOpCount(){
+int Train::getOpCount() {
   return countOp;
 }
